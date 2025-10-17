@@ -1,0 +1,127 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "buffer_font_family": "JetBrains Mono NL",
+  "git_panel": {},
+  "project_panel": {
+    "hide_gitignore": true
+  },
+  "telemetry": {
+    "diagnostics": true,
+    "metrics": true
+  },
+  "preview_tabs": {
+    "enabled": false
+  },
+  "minimap": {
+    "show": "auto"
+  },
+  "cursor_blink": true,
+  "file_types": {},
+  "show_edit_predictions": true,
+  "preferred_line_length": 80,
+  "soft_wrap": "prefer_line",
+  "tab_size": 2,
+  "icon_theme": "Material Icon Theme",
+  "theme": "Catppuccin Frappé (Blur) [Heavy]",
+  "terminal": {
+    "env": {
+      "FIG_NEW_SESSION": "1"
+    },
+    "dock": "bottom",
+    "toolbar": {
+      "breadcrumbs": true
+    },
+    "cursor_shape": "underline",
+    "font_family": "MesloLGS NF"
+  },
+  "ui_font_weight": 700,
+  "base_keymap": "VSCode",
+  "confirm_quit": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 13.0,
+  "title_bar": {
+    "show_branch_icon": false, // Show/hide branch icon beside branch switcher
+    "show_branch_name": true, // Show/hide branch name
+    "show_project_items": true, // Show/hide project host and name
+    "show_onboarding_banner": true, // Show/hide onboarding banners
+    "show_user_picture": true, // Show/hide user avatar
+    "show_sign_in": true, // Show/hide sign-in button
+    "show_menus": false // Show/hide menus
+  },
+  "experimental.theme_overrides": {
+    "error": "#fb4a35ff",
+    "error.background": "#590a0fff",
+    "error.border": "#771617ff",
+    "syntax": {
+      "function": {
+        "font_weight": 700
+      },
+      "accent": {
+        "background_color": "#0066ff"
+      },
+      "comment": {
+        "font_style": "italic",
+        "font_weight": 700
+      },
+      "type": {
+        "font_style": "italic",
+        "font_weight": 700
+      },
+      "punctuation.bracket": {
+        "font_weight": 700
+      },
+      "keyword": {
+        "font_weight": 700
+      },
+      "boolean": {
+        "font_weight": 700
+      },
+      "variable": {
+        "font_weight": 700
+      },
+      "enum": {
+        "font_style": null,
+        "font_weight": 700
+      },
+      "function.builtin": {
+        "font_style": null,
+        "font_weight": 700
+      },
+      "attribute": {
+        "font_style": "italic",
+        "font_weight": 700
+      },
+      "constant": {
+        "font_style": null,
+        "font_weight": 700
+      },
+      "constructor": {
+        "font_style": null,
+        "font_weight": 700
+      },
+      "namespace": {
+        "font_style": null,
+        "font_weight": 700
+      },
+      "number": {
+        "font_style": null,
+        "font_weight": 700
+      },
+      "property": {
+        "font_style": null,
+        "font_weight": 700
+      },
+      "operator": {
+        "font_style": null,
+        "font_weight": 700
+      }
+    }
+  }
+}

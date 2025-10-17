@@ -1,0 +1,17 @@
+[
+  {
+    "context": "Workspace",
+    "use_key_equivalents": true,
+    "bindings": {
+      "cmd-shift-g": "git_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Editor",
+    "use_key_equivalents": true,
+    "bindings": {
+      "cmd-i": "editor::ShowCompletions",
+      "cmd-shift-i": "editor::ShowCompletions"
+    }
+  }
+]
