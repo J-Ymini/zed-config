@@ -7,11 +7,17 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "code_actions_on_format": {
-    // "source.organizeImports": true,
-    "source.fixAll.eslint": true
-  },
   "format_on_save": "on",
+  "formatter": [
+    // Use ESLint's --fix:
+    {
+      "code_action": "source.fixAll.eslint"
+    },
+    // Organize imports on save:
+    {
+      "code_action": "source.organizeImports"
+    }
+  ],
   "lsp": {
     "tailwindcss-language-server": {
       "settings": {
