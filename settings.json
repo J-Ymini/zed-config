@@ -7,49 +7,90 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "git": {
+    "disable_git": false,
+  },
+  "selection_highlight": true,
+  "current_line_highlight": "line",
+  "cursor_shape": "bar",
+  "text_rendering_mode": "platform_default",
+  "ui_font_family": ".SystemUIFont",
+  "buffer_line_height": "comfortable",
+  "diagnostics": {
+    "button": true,
+    "include_warnings": true,
+    "inline": {
+      "enabled": true,
+      "update_debounce_ms": 100,
+      "padding": 4,
+      "min_column": 0,
+      "max_severity": null,
+    },
+  },
+  "edit_predictions": {
+    "mode": "eager",
+  },
   "code_actions_on_format": {
     // "source.organizeImports": true,
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": true,
   },
   "format_on_save": "on",
   "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+      },
+      "enable_lsp_tasks": true,
+    },
     "tailwindcss-language-server": {
       "settings": {
         "classFunctions": ["cva", "cx"],
         "experimental": {
-          "classRegex": ["[cls|className]\\s\\:\\=\\s\"([^\"]*)"]
-        }
-      }
+          "classRegex": ["[cls|className]\\s\\:\\=\\s\"([^\"]*)"],
+        },
+      },
     },
     "vscode-css-language-server": {
       "settings": {
         "css": {
           "lint": {
-            "unknownAtRules": "ignore"
-          }
-        }
-      }
-    }
+            "unknownAtRules": "ignore",
+          },
+        },
+      },
+    },
   },
   "inlay_hints": {
+    "show_parameter_hints": false,
     "show_value_hints": true,
-    "enabled": false
+    "enabled": false,
   },
   "buffer_font_family": "JetBrains Mono NL",
-  "git_panel": {},
+  "git_panel": {
+    "tree_view": true,
+  },
   "project_panel": {
     "hide_root": false,
-    "hide_gitignore": false
+    "hide_gitignore": false,
   },
   "telemetry": {
     "diagnostics": true,
-    "metrics": true
+    "metrics": true,
   },
   "preview_tabs": {
-    "enabled": false
+    "enabled": false,
   },
   "minimap": {
-    "show": "auto"
+    "show": "auto",
   },
   "cursor_blink": true,
   "file_types": {},
@@ -58,17 +99,17 @@
   "soft_wrap": "prefer_line",
   "tab_size": 2,
   "icon_theme": "Material Icon Theme",
-  "theme": "Catppuccin Frappé",
+  "theme": "Catppuccin Mocha (Blur) [Heavy]",
   "terminal": {
     "env": {
-      "FIG_NEW_SESSION": "1"
+      "FIG_NEW_SESSION": "1",
     },
     "dock": "bottom",
     "toolbar": {
-      "breadcrumbs": true
+      "breadcrumbs": true,
     },
     "cursor_shape": "underline",
-    "font_family": "MesloLGS NF"
+    "font_family": "MesloLGS NF",
   },
   "ui_font_weight": 700,
   "base_keymap": "VSCode",
@@ -82,7 +123,7 @@
     "show_onboarding_banner": true, // Show/hide onboarding banners
     "show_user_picture": true, // Show/hide user avatar
     "show_sign_in": true, // Show/hide sign-in button
-    "show_menus": false // Show/hide menus
+    "show_menus": false, // Show/hide menus
   },
   "experimental.theme_overrides": {
     "error": "#fb4a35ff",
@@ -90,67 +131,67 @@
     "error.border": "#771617ff",
     "syntax": {
       "function": {
-        "font_weight": 700
+        "font_weight": 700,
       },
       "accent": {
-        "background_color": "#0066ff"
+        "background_color": "#0066ff",
       },
       "comment": {
         "font_style": "italic",
-        "font_weight": 700
+        "font_weight": 700,
       },
       "type": {
         "font_style": "italic",
-        "font_weight": 700
+        "font_weight": 700,
       },
       "punctuation.bracket": {
-        "font_weight": 700
+        "font_weight": 700,
       },
       "keyword": {
-        "font_weight": 700
+        "font_weight": 700,
       },
       "boolean": {
-        "font_weight": 700
+        "font_weight": 700,
       },
       "variable": {
-        "font_weight": 700
+        "font_weight": 700,
       },
       "enum": {
         "font_style": null,
-        "font_weight": 700
+        "font_weight": 700,
       },
       "function.builtin": {
         "font_style": null,
-        "font_weight": 700
+        "font_weight": 700,
       },
       "attribute": {
         "font_style": "italic",
-        "font_weight": 700
+        "font_weight": 700,
       },
       "constant": {
         "font_style": null,
-        "font_weight": 700
+        "font_weight": 700,
       },
       "constructor": {
         "font_style": null,
-        "font_weight": 700
+        "font_weight": 700,
       },
       "namespace": {
         "font_style": null,
-        "font_weight": 700
+        "font_weight": 700,
       },
       "number": {
         "font_style": null,
-        "font_weight": 700
+        "font_weight": 700,
       },
       "property": {
         "font_style": null,
-        "font_weight": 700
+        "font_weight": 700,
       },
       "operator": {
         "font_style": null,
-        "font_weight": 700
-      }
-    }
-  }
+        "font_weight": 700,
+      },
+    },
+  },
 }

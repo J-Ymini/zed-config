@@ -4,12 +4,17 @@
   // Use placeholders like $1, $2 or ${1:defaultValue} to define tab stops.
   // The $0 determines the final cursor position.
   // Placeholders with the same value are linked.
-  "Log to console": {
-    "prefix": "clg",
-    "body": ["console.log(\"${1:value}\")", "$0"]
-  },
-  "Log to console with variable": {
+
+  "Log to console only variable": {
     "prefix": "clgv",
+    "body": ["console.log(${1:value})", "$0"]
+  },
+  "Log to console only text": {
+    "prefix": "clgv",
+    "body": ["console.log(${1:value})", "$0"]
+  },
+  "Log to console text and variable": {
+    "prefix": "clgtv",
     "body": ["console.log(\"${1:value}\", ${1:value})", "$0"]
   }
 }
