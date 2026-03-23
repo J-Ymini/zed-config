@@ -7,6 +7,12 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "agent_servers": {
+    "codex-acp": {
+      "type": "registry"
+    }
+  },
+  "colorize_brackets": false,
   "git": {
     "disable_git": false,
   },
@@ -21,7 +27,7 @@
     "include_warnings": true,
     "inline": {
       "enabled": true,
-      "update_debounce_ms": 100,
+      "update_debounce_ms": 150,
       "padding": 4,
       "min_column": 0,
       "max_severity": null,
@@ -74,7 +80,7 @@
     "show_value_hints": true,
     "enabled": false,
   },
-  "buffer_font_family": "JetBrains Mono NL",
+  "buffer_font_family": "JetBrains Mono",
   "git_panel": {
     "tree_view": true,
   },

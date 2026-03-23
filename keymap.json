@@ -27,5 +27,17 @@
       "cmd-i": "editor::ShowCompletions",
       "cmd-shift-i": "editor::ShowCompletions"
     }
+  },
+  {
+    "context": "(Editor && mode == full)",
+    "bindings": {
+      "cmd-e": null
+    }
+  },
+  {
+    "context": "KeymapEditor",
+    "bindings": {
+      "cmd-e": null
+    }
   }
 ]
