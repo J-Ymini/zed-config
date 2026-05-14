@@ -7,12 +7,49 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "agent_servers": {
-    "codex-acp": {
-      "type": "registry"
-    }
+  "indent_guides": {
+    "background_coloring": "indent_aware",
+    "coloring": "indent_aware",
   },
-  "colorize_brackets": false,
+  "mouse_wheel_zoom": false,
+  "ui_font_family": "JetBrains Mono NL",
+  "cli_default_open_behavior": "new_window",
+  "diff_view_style": "split",
+  "disable_ai": true,
+  "outline_panel": {
+    "dock": "right",
+  },
+  "collaboration_panel": {
+    "dock": "right",
+  },
+  "agent": {
+    "button": true,
+    "dock": "left",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "completion_detail_alignment": "left",
+  "languages": {
+    "TSX": {
+      "inlay_hints": {
+        "edit_debounce_ms": 699,
+        "show_background": false,
+        "show_parameter_hints": true,
+        "show_type_hints": true,
+        "show_value_hints": true,
+        "enabled": false,
+      },
+      "completions": {
+        "words_min_length": 3,
+      },
+      "tab_size": 2,
+      "hard_tabs": false,
+    },
+  },
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_weight": 700.0,
+  "agent_servers": {},
+  "colorize_brackets": true,
   "git": {
     "disable_git": false,
   },
@@ -20,7 +57,6 @@
   "current_line_highlight": "line",
   "cursor_shape": "bar",
   "text_rendering_mode": "platform_default",
-  "ui_font_family": ".SystemUIFont",
   "buffer_line_height": "comfortable",
   "diagnostics": {
     "button": true,
@@ -80,13 +116,25 @@
     "show_value_hints": true,
     "enabled": false,
   },
-  "buffer_font_family": "JetBrains Mono",
   "git_panel": {
+    "scrollbar": {
+      "show": "auto",
+    },
+    "show_count_badge": false,
+    "sort_by_path": true,
+    "file_icons": true,
+    "status_style": "icon",
+    "button": true,
+    "dock": "left",
     "tree_view": true,
+    "starts_open": true,
   },
   "project_panel": {
+    "git_status": true,
+    "dock": "left",
     "hide_root": false,
     "hide_gitignore": false,
+    "git_status_indicator": true,
   },
   "telemetry": {
     "diagnostics": true,
@@ -104,9 +152,19 @@
   "preferred_line_length": 80,
   "soft_wrap": "prefer_line",
   "tab_size": 2,
-  "icon_theme": "Material Icon Theme",
-  "theme": "Catppuccin Mocha (Blur) [Heavy]",
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Material Icon Theme",
+    "dark": "Base Charmed Icons",
+  },
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Frappé (Blur) [Heavy]",
+    "dark": "Catppuccin Frappé (Blur) [Heavy]",
+  },
   "terminal": {
+    "font_weight": 700.0,
+    "font_size": 12.0,
     "env": {
       "FIG_NEW_SESSION": "1",
     },
@@ -115,7 +173,7 @@
       "breadcrumbs": true,
     },
     "cursor_shape": "underline",
-    "font_family": "MesloLGS NF",
+    "font_family": "JetBrains Mono",
   },
   "ui_font_weight": 700,
   "base_keymap": "VSCode",
@@ -123,15 +181,19 @@
   "ui_font_size": 16,
   "buffer_font_size": 13.0,
   "title_bar": {
-    "show_branch_icon": false, // Show/hide branch icon beside branch switcher
+    "show_branch_status_icon": true, // Show/hide branch icon beside branch switcher
     "show_branch_name": true, // Show/hide branch name
     "show_project_items": true, // Show/hide project host and name
     "show_onboarding_banner": true, // Show/hide onboarding banners
     "show_user_picture": true, // Show/hide user avatar
     "show_sign_in": true, // Show/hide sign-in button
-    "show_menus": false, // Show/hide menus
+    "show_menus": false, // Show/hide menus,
   },
   "experimental.theme_overrides": {
+    "editor.document_highlight.write_background": "#c2c90059",
+    "editor.active_line.background": "#00ff0814",
+    "editor.highlighted_line.background": "#0066ff",
+    "editor.document_highlight.bracket_background": "#3d8bff4d",
     "error": "#fb4a35ff",
     "error.background": "#590a0fff",
     "error.border": "#771617ff",
@@ -197,6 +259,22 @@
       "operator": {
         "font_style": null,
         "font_weight": 700,
+      },
+    },
+  },
+  "file_finder": {
+    "file_icons": true,
+    "modal_max_width": "medium",
+  },
+  "theme_overrides": {
+    "Catppuccin Frappé (Blur) [Heavy]": {
+      "syntax": {
+        "tag.jsx": {
+          "color": "#EA999C",
+        },
+        "tag.component.jsx": {
+          "color": "#E5C890",
+        },
       },
     },
   },
